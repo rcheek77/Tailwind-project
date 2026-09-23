@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Assignment - index</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+      --color-custom1: #3b82f6;
+      --color-custom2: #10b981;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=architecture" />
+</head>
+<body class="mx-30">
+
+    <!-- HEADER -->
+    <header class="w-full mx-auto px-8 py-6 flex justify-between items-center border-b-2 px-">         
+    <h1 class="font-black text-[13px] tracking-[0.15em] w-1/4">STUDENT_PORTFOLIO_V1</h1>         
+        <nav class="flex-1 flex justify-center">
+            <ul class="flex items-center space-x-10">
+                <li>
+                    <a href="index.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em] transition-colors duration-200">HOME</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em] transition-colors duration-200">PROJECTS</a>
+                </li>
+                <li class="relative py-1">
+                    <a href="contact.html" aria-current="page" class="text-[10px] font-black text-black tracking-[0.2em]">CONTACT</a>
+                    <div class="absolute bottom-0 left-0 w-full h-[2px] bg-black"></div>
+                </li>
+            </ul>
+        </nav>     
+    <div class="w-1/4 flex justify-end">
+        <a href="#" class="inline-block text-[10px] font-bold text-white bg-black px-6 py-2.5 tracking-[0.15em] hover:bg-gray-800 transition-colors duration-200">DOWNLOAD_CV</a>
+    </div>
+</header>
+
+
+    <!-- TOP SECTION -->
+   <div class="flex mx-10 min-h-[350px] mt-20">
+        <div class=" flex flex-col w-[60%] p-6">
+            <h1 class="text-sm p-3">SELECTED WORKS 2023-24</h1>
+            <h2 class="text-7xl justify-between font-bold px-3 pb-10">ARCHITECTURAL INTEGRITY & SPATIAL LOGIC.</h2>
+        </div>
+
+        <div class=" flex flex-col w-[40%] min-w-[320px] overflow-hidden mt-20">
+            <div class="flex flex-col justify-center h-1/2 px-6 pl-6 pr-50">
+                <p class="text-base font-medium text-slate-800 border-l-4 pl-5">
+                    A focused investigation into modular <br>structures and technical precision <br> with high-density urban <br>environments. Designed for clarity, <br>authority and high-performance<br> utility.
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4 h-1/2 px-6 py-6">
+                <button class="flex-1 min-w-[140px] bg-black text-white text-[11px] font-bold tracking-widest py-4 px-4 uppercase transition-colors hover:bg-neutral-800">
+                    EXPLORE PORTFOLIO
+                <button class="flex-1 min-w-[140px] bg-neutral-200 text-black text-[11px] font-bold tracking-widest py-4 px-4 uppercase transition-colors hover:bg-neutral-300">
+                    OUR PHILOSOPHY
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- SECOND SECTION -->
+     <div>
+
+        <div class="min-h-10"></div>
+
+            <div class="overflow-x-auto mx-10 bg-gray-200">             
+                <table class="min-w-full divide-gray-200 text-sm">    
+
+                    <thead class="bg-gray-50 text-left">              
+                        <tr class="flex w-full bg-gray-200">                         
+                            <th class="flex-1 relative whitespace-nowrap pl-12 py-5 font-medium text-gray-900 after:absolute after:right-0 after:bottom-0 after:h-1/2 after:w-px after:bg-gray-400">                             
+                                PROJECT COMPLETED
+                            </th>                         
+                            <th class="flex-1 relative whitespace-nowrap pl-12 py-5 font-medium text-gray-900 after:absolute after:right-0 after:bottom-0 after:h-1/2 after:w-px after:bg-gray-400">                             
+                                GLOBAL AWARDS
+                            </th>                         
+                            <th class="flex-1 relative whitespace-nowrap pl-12 py-5 font-medium text-gray-900 after:absolute after:right-0 after:bottom-0 after:h-1/2 after:w-px after:bg-gray-400">                             
+                                TECHNICAL CERTS
+                            </th>                         
+                            <th class="flex-1 whitespace-nowrap pl-12 py-5 font-medium text-gray-900">                             
+                                DESIGN LABS
+                            </th>                     
+                        </tr>                 
+                    </thead>      
+
+                    <tbody>                     
+                        <tr class="flex w-full hover:bg-slate-50 transition-colors font-bold italic text-4xl text-left">               
+                            <td class="flex-1 relative whitespace-nowrap pl-12 py-5 text-black after:absolute after:right-0 after:top-0 after:h-1/2 after:w-px after:bg-gray-400">                             
+                                42+
+                            </td>                         
+                            <td class="flex-1 relative whitespace-nowrap pl-12 py-5 text-black after:absolute after:right-0 after:top-0 after:h-1/2 after:w-px after:bg-gray-400">                             
+                                12
+                            </td>                         
+                            <td class="flex-1 relative whitespace-nowrap pl-12 py-5 text-black after:absolute after:right-0 after:top-0 after:h-1/2 after:w-px after:bg-gray-400">                             
+                                08
+                            </td>                         
+                            <td class="flex-1 whitespace-nowrap pl-12 py-5 text-black">                             
+                                03
+                            </td>                     
+                        </tr>                 
+                    </tbody>         
+
+                </table>         
+            </div>
+
+        <div class="min-h-10"></div>
+
+     </div>
+
+     <!-- THIRD SECTION (BOTTOM PART) -->
+<div class="grid grid-cols-1 md:grid-cols-2 w-full bg-gray-100">
+
+    <div class="relative bg-black text-white min-h-[50vh] md:min-h-0 w-full h-full">
+        <img src="./images/monolith.jpg" alt="Dark architectural concrete structure with light revealing a geometric shape" class="absolute inset-0 w-full h-full object-cover opacity-40" aria-hidden="false">
+        
+        <div class="absolute bottom-0 left-0 w-full p-6 md:p-10 lg:p-12 z-10 bg-gradient-to-t from-black/90 via-black/50 to-transparent pt-32">
+            <p class="text-sm font-semibold tracking-wider uppercase mb-2 text-gray-300">Project 001</p>
+            <h2 id="hero-heading" class="text-3xl lg:text-4xl font-bold mb-4">THE MONOLITH PAVILION</h2>
+            <p class="text-lg mb-8 text-gray-200 max-w-xl">Exploration of concrete as a fluid yet structural element in public transit hubs.</p>
+            <a href="/case-studies/monolith" aria-describedby="hero-heading" class="inline-block bg-white text-black hover:bg-gray-200 transition-colors py-2 px-4 font-semibold focus:outline-2 focus:outline-offset-2 focus:outline-white">
+                VIEW CASE STUDY <span aria-hidden="true">→</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="px-6 md:px-8 flex flex-col justify-between w-full h-full">
+        
+       <section aria-labelledby="methodology-title" class="bg-gray-300 p-6 md:p-8 pr-[10px] md:pr-[10px] border-b border-x border-gray-200/60 shadow-sm w-full mr-10">
+            <p class="uppercase text-xs font-bold tracking-wider text-gray-400 mb-3">Methodology</p>
+            <h2 id="methodology-title" class="text-xl md:text-2xl font-black uppercase tracking-tight mb-4 text-gray-900 leading-tight">
+                BIM Integration & <br class="hidden md:inline">Structural Analytics
+            </h2>
+            <p class="text-xs md:text-sm text-gray-500 leading-relaxed mb-10 max-w-xl">
+                Every project follows a rigid grid system of 8px increments, ensuring mathematical perfection from initial concept to the final blueprint.
+            </p>
+            
+            <nav class="grid grid-cols-3 gap-4 border-t border-gray-200 pt-6" aria-label="Methodology Categories">
+                <a href="#cad" class="text-xs uppercase font-bold tracking-wider text-black border-b-2 border-black pb-2 transition-all focus:outline-none focus:ring-2 focus:ring-black">
+                    CAD
+                </a>
+                <a href="#3d-mapping" class="text-xs uppercase font-bold tracking-wider text-gray-400 border-b-2 border-gray-200 hover:text-black hover:border-black pb-2 transition-all focus:outline-none focus:ring-2 focus:ring-black">
+                    3D Mapping
+                </a>
+                <a href="#sustainability" class="text-xs uppercase font-bold tracking-wider text-gray-400 border-b-2 border-gray-200 hover:text-black hover:border-black pb-2 transition-all focus:outline-none focus:ring-2 focus:ring-black">
+                    Sustainability
+                </a>
+            </nav>
+        </section>
+
+
+        <div class="h-6 md:h-8 w-full flex-shrink-0"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-auto">
+            
+            <section aria-labelledby="lab-title" class="relative bg-white p-6 border-t border-x border-gray-200/60 shadow-sm overflow-hidden flex flex-col justify-between min-h-[260px]">
+                <div class="relative z-10">
+                    <p class="uppercase text-xs font-bold tracking-wider text-gray-400 mb-2">Lab Archive</p>
+                    <h2 id="lab-title" class="text-lg font-black uppercase tracking-tight text-gray-900">Shadow Studies</h2>
+                </div>
+                <img src="./images/crystal.jpg" 
+                    alt="Close-up of a sharp geometric shadow effect" 
+                    class="absolute bottom-0 right-0 w-1/2 h-1/2 object-cover bg-black z-0">
+            </section>
+
+            <section aria-labelledby="cta-title" class="bg-black text-white p-6 md:p-8 flex flex-col justify-center items-start text-left min-h-[260px] space-y-5">
+                <span class="material-symbols-outlined text-2xl block" aria-hidden="true">
+                    architecture
+                </span>
+                <h2 id="cta-title" class="text-lg font-black uppercase tracking-wider leading-snug max-w-[200px]">
+                    Join the <br>architectural <br>dialogue.
+                </h2>
+                <div class="w-full max-w-[160px] pt-1">
+                    <a href="/contact" class="inline-block text-center border border-white text-white text-xs font-bold uppercase tracking-widest py-2 px-4 w-full hover:bg-white hover:text-black transition-colors focus:outline-2 focus:outline-offset-2 focus:outline-white">
+                        Submit Inquiry
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="mx-auto px-6 py-20 md:px-12">
+    
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-end border-b border-black pb-4 mb-12">
+        <div class="text-left">
+            <p class="text-[10px] tracking-widest text-gray-400 font-medium">INDEX</p>
+            <h1 class="text-3xl font-black tracking-tight mt-1">CURRENT PROJECTS</h1>
+        </div>
+        <div class="text-left sm:text-right mt-4 sm:mt-0">
+            <span class="text-[10px] tracking-widest text-gray-400 font-medium block">SORT BY</span>
+            <span class="text-xs font-bold uppercase tracking-wider block mt-1 underline">YEAR: 2024</span>
+        </div>
+    </div>
+
+    <div class="divide-y divide-gray-200">
+        <div class="grid grid-cols-12 items-center py-7 gap-4">
+            <div class="col-span-2 md:col-span-1 text-sm font-medium text-gray-400 font-mono">001</div>
+            <div class="col-span-10 md:col-span-5 text-base font-black tracking-tight">VORTEX HOUSING COMPLEX</div>
+            <div class="col-span-6 md:col-span-3 text-sm text-gray-400 tracking-wide">STOCKHOLM, SE</div>
+            <div class="col-span-6 md:col-span-3 flex justify-end md:justify-start space-x-1.5">
+                <span class="text-[9px] font-bold bg-[#f3f4f6] text-gray-500 border border-gray-200 px-2 py-0.5 tracking-wider">URBAN</span>
+                <span class="text-[9px] font-bold bg-[#f3f4f6] text-gray-500 border border-gray-200 px-2 py-0.5 tracking-wider">RESIDENTIAL</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 items-center py-7 gap-4">
+            <div class="col-span-2 md:col-span-1 text-sm font-medium text-gray-400 font-mono">002</div>
+            <div class="col-span-10 md:col-span-5 text-base font-black tracking-tight">THE LINEAR OBSERVATORY</div>
+            <div class="col-span-6 md:col-span-3 text-sm text-gray-400 tracking-wide">ATACAMA, CL</div>
+            <div class="col-span-6 md:col-span-3 flex justify-end md:justify-start space-x-1.5">
+                <span class="text-[9px] font-bold bg-[#f3f4f6] text-gray-500 border border-gray-200 px-2 py-0.5 tracking-wider">SCIENCE</span>
+                <span class="text-[9px] font-bold bg-[#f3f4f6] text-gray-500 border border-gray-200 px-2 py-0.5 tracking-wider">MINIMALIST</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 items-center py-7 border-b border-gray-200 gap-4">
+            <div class="col-span-2 md:col-span-1 text-sm font-medium text-gray-400 font-mono">003</div>
+            <div class="col-span-10 md:col-span-5 text-base font-black tracking-tight">BRUTALIST ATRIUM</div>
+            <div class="col-span-6 md:col-span-3 text-sm text-gray-400 tracking-wide">BERLIN, DE</div>
+            <div class="col-span-6 md:col-span-3 flex justify-end md:justify-start space-x-1.5">
+                <span class="text-[9px] font-bold bg-[#f3f4f6] text-gray-500 border border-gray-200 px-2 py-0.5 tracking-wider">PUBLIC</span>
+                <span class="text-[9px] font-bold bg-[#f3f4f6] text-gray-500 border border-gray-200 px-2 py-0.5 tracking-wider">INTERIOR</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-20 bg-black text-white text-center py-24 px-6">
+        <h2 class="text-3xl md:text-4xl font-black tracking-tight mb-14 max-w-2xl mx-auto leading-tight">STAY UPDATED ON THE LATEST STRUCTURAL INVESTIGATIONS.</h2>
+        <div class="flex justify-between items-center mb-10 max-w-md mx-auto border-b border-gray-800 pb-2">
+            <input type="email" placeholder="EMAIL ADDRESS" class="bg-transparent w-full text-xs text-white placeholder-gray-800 tracking-widest focus:outline-none py-1 uppercase">
+            <button class="text-xl font-bold ml-4 text-gray-500 hover:text-white transition-colors">→</button>
+        </div>
+        <div class="flex justify-center space-x-12 text-[11px] tracking-widest font-bold text-gray-400">
+            <span>JOURNAL</span>
+            <span>NOTES</span>
+            <span>TWITTER</span>
+        </div>
+    </div>
+
+     <!-- FOOTER -->
+    <div class="mt-8 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest text-gray-800 font-medium gap-4">
+        <p>© 2024 ARCHITECTURAL PORTFOLIO. ALL RIGHTS RESERVED.</p>
+        <div class="flex space-x-6">
+            <span>INSTAGRAM</span>
+            <span>LINKEDIN</span>
+            <span>GITHUB</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
