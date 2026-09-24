@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Assignment - projects</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style type="text/tailwindcss">
+    @theme {
+      --color-custom1: #3b82f6;
+      --color-custom2: #10b981;
+    }
+  </style>
     <link rel="stylesheet" href="https://cloudflare.com">
 </head>
-<body class="bg-[#FCFCFC] px-50 text-black min-h-screen flex flex-col justify-between font-sans">
+<body class="bg-[#FCFCFC] px-4 sm:px-8 md:px-16 lg:px-24 xl:px-50 text-black min-h-screen flex flex-col justify-between font-sans overflow-x-hidden bg-purple-200">
 
     <!-- HEADER -->
-    <header class="w-full mx-auto px-8 py-6 flex justify-between items-center">
-        <h1 class="font-black text-[13px] tracking-[0.15em]">STUDENT_PORTFOLIO_V1</h1>
-        <nav class="flex items-center space-x-10">
+    <header class="w-full mx-auto px-2 sm:px-8 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <h1 class="font-black text-[13px] tracking-[0.15em] text-center sm:text-left">RSC DESIGN</h1>
+        <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 sm:space-x-10">
             <a href="index.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em]">HOME</a>
             <a href="projects.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em]">PROJECTS</a>
             <div class="relative py-1">
@@ -23,124 +29,127 @@
         </nav>
     </header>
 
-        <section class="py-8 border-l-4 border-t-0 pl-6 mb-10">
-            <h1 class="text-3xl font-bold">SELECTED_WORKS</h1>
-            <p class="text-lg mt-4">AN ARCHIVAL COLLECTION OF ACADEMIC AND PERSONAL PROJECTS FOCUSING ON<br> STRUCTURAL INTEGRITY, COMPUTATIONAL DESIGN, AND INTERACTIVE SYSTEMS. 2022<br> — 2024.</p>
-        </section>
+    <section class="py-8 border-l-4 border-t-0 pl-4 sm:pl-6 mb-10">
+        <h1 class="text-2xl sm:text-3xl font-bold">SELECTED WORKS</h1>
+        <p class="text-sm sm:text-lg mt-4 leading-relaxed">AN ARCHIVAL COLLECTION OF ACADEMIC AND PERSONAL PROJECTS FOCUSING ON STRUCTURAL INTEGRITY, COMPUTATIONAL DESIGN, AND INTERACTIVE SYSTEMS. 2025 — 2026.</p>
+    </section>
 
-        <!-- GRID CARDS -->
-        <div class="grid grid-cols-3">
-            <div class="border border-gray-300 p-10 bg-white">
-                <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20">
-                
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold">PROJECT TITLE</h2>
-                    <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_001</button>
-                </div>
-                
-                <p class="text-sm mt-2">Exploration of generative patterns using modular arithmetic. Focus on visual weight and balance within a constrained 8px grid system.</p>
-                <div class="mt-10 flex gap-10 text-xs">
-                    <span>#SYSTEMS</span>
-                    <span>#TYPOGRAPHY</span>
-                </div>
+    <!-- GRID CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="border border-gray-300 p-6 sm:p-10 bg-white">
+            <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20" onerror="this.src='https://placehold.co/400x200/eee/333?text=PROJECT'">
+            
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">PROJECT TITLE</h2>
+                <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_001</button>
             </div>
-            <div class="border border-gray-300 p-10 bg-white">
-                <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20">
-                
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold">PROJECT TITLE</h2>
-                    <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_002</button>
-                </div>
-                
-                <p class="text-sm mt-2">Demonstrating rapid state transitions and color inversion through standard CSS utility classes. Hover over this card to view the visual transformation.</p>
-                <div class="mt-10 flex gap-10 text-xs">
-                    <span>#INTERACTIVE</span>
-                    <span>#MOTION</span>
-                </div>
+            
+            <p class="text-sm mt-2">Exploration of generative patterns using modular arithmetic. Focus on visual weight and balance within a constrained 8px grid system.</p>
+            <div class="mt-10 flex gap-6 sm:gap-10 text-xs flex-wrap">
+                <span>#SYSTEMS</span>
+                <span>#TYPOGRAPHY</span>
             </div>
-            <div class="border border-gray-300 p-10 bg-white">
-                <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20">
-                
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold">PROJECT TITLE</h2>
-                    <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_003</button>
-                </div>
-                
-                <p class="text-sm mt-2">Multi-dimensional data visualization for urban traffic flow. Utilizing darg-gray scalar values to represent density and frequency.</p>
-                <div class="mt-10 flex gap-10 text-xs">
-                    <span>#DATA_VIZ</span>
-                    <span>#ALGORITHIC</span>
-                </div>
+        </div>
+        <div class="border border-gray-300 p-6 sm:p-10 bg-white">
+            <img src="./images/envelope.png" alt="Project 2 Placeholder" class="w-full mb-4 opacity-20" onerror="this.src='https://placehold.co/400x200/eee/333?text=PROJECT'">
+            
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">PROJECT TITLE</h2>
+                <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_002</button>
             </div>
-            <div class="border border-gray-300 p-10 bg-white">
-                <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20">
-                
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold">PROJECT TITLE</h2>
-                    <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_004</button>
-                </div>
-                
-                <p class="text-sm mt-2">Design study of brutalist architecture translated into digital interface components. Emphasis on raw material feel and high contrast.</p>
-                <div class="mt-10 flex gap-10 text-xs">
-                    <span>#BRUTALISM</span>
-                    <span>#UI_DESIGN</span>
-                </div>
+            
+            <p class="text-sm mt-2">Demonstrating rapid state transitions and color inversion through standard CSS utility classes. Hover over this card to view the visual transformation.</p>
+            <div class="mt-10 flex gap-6 sm:gap-10 text-xs flex-wrap">
+                <span>#INTERACTIVE</span>
+                <span>#MOTION</span>
             </div>
-           <div class="border border-gray-300 p-10 bg-white">
-                <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20">
-                
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold">PROJECT TITLE</h2>
-                    <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_005</button>
-                </div>
-                
-                <p class="text-sm mt-2">Responsive system framework for educatonal platforms. Prioritizing hierarchy and accessible data nodes.</p>
-                <div class="mt-10 flex gap-10 text-xs">
-                    <span>#FRAMEWORK</span>
-                    <span>#UX_RESEARCH</span>
-                </div>
+        </div>
+        <div class="border border-gray-300 p-6 sm:p-10 bg-white">
+            <img src="./images/envelope.png" alt="Project 3 Placeholder" class="w-full mb-4 opacity-20" onerror="this.src='https://placehold.co/400x200/eee/333?text=PROJECT'">
+            
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">PROJECT TITLE</h2>
+                <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_003</button>
             </div>
-            <div class="border border-gray-300 p-10 bg-white">
-                <img src="./images/envelope.png" alt="Project 1 Placeholder" class="w-full mb-4 opacity-20">
-                
-                <div class="flex justify-between items-center">
-                    <h2 class="font-bold">PROJECT TITLE</h2>
-                    <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_006</button>
-                </div>
-                
-                <p class="text-sm mt-2">Experimental log of 100 days of layout experiments. Documentation of grid-breaking patterns and asymmetrical balance.</p>
-                <div class="mt-10 flex gap-10 text-xs">
-                    <span>#LAYOUT</span>
-                    <span>#EXPERIMENTAL</span>
-                </div>
+            
+            <p class="text-sm mt-2">Multi-dimensional data visualization for urban traffic flow. Utilizing darg-gray scalar values to represent density and frequency.</p>
+            <div class="mt-10 flex gap-6 sm:gap-10 text-xs flex-wrap">
+                <span>#DATA_VIZ</span>
+                <span>#ALGORITHIC</span>
+            </div>
+        </div>
+        <div class="border border-gray-300 p-6 sm:p-10 bg-white">
+            <img src="./images/envelope.png" alt="Project 4 Placeholder" class="w-full mb-4 opacity-20" onerror="this.src='https://placehold.co/400x200/eee/333?text=PROJECT'">
+            
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">PROJECT TITLE</h2>
+                <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_004</button>
+            </div>
+            
+            <p class="text-sm mt-2">Design study of brutalist architecture translated into digital interface components. Emphasis on raw material feel and high contrast.</p>
+            <div class="mt-10 flex gap-6 sm:gap-10 text-xs flex-wrap">
+                <span>#BRUTALISM</span>
+                <span>#UI_DESIGN</span>
+            </div>
+        </div>
+        <div class="border border-gray-300 p-6 sm:p-10 bg-white">
+            <img src="./images/envelope.png" alt="Project 5 Placeholder" class="w-full mb-4 opacity-20" onerror="this.src='https://placehold.co/400x200/eee/333?text=PROJECT'">
+            
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">PROJECT TITLE</h2>
+                <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_005</button>
+            </div>
+            
+            <p class="text-sm mt-2">Responsive system framework for educational platforms. Prioritizing hierarchy and accessible data nodes.</p>
+            <div class="mt-10 flex gap-6 sm:gap-10 text-xs flex-wrap">
+                <span>#FRAMEWORK</span>
+                <span>#UX_RESEARCH</span>
+            </div>
+        </div>
+        <div class="border border-gray-300 p-6 sm:p-10 bg-white">
+            <img src="./images/envelope.png" alt="Project 6 Placeholder" class="w-full mb-4 opacity-20" onerror="this.src='https://placehold.co/400x200/eee/333?text=PROJECT'">
+            
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold">PROJECT TITLE</h2>
+                <button class="bg-gray-100 px-2 py-1 border text-sm text-gray-400">ID_006</button>
+            </div>
+            
+            <p class="text-sm mt-2">Experimental log of 100 days of layout experiments. Documentation of grid-breaking patterns and asymmetrical balance.</p>
+            <div class="mt-10 flex gap-6 sm:gap-10 text-xs flex-wrap">
+                <span>#LAYOUT</span>
+                <span>#EXPERIMENTAL</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full font-sans text-[10px] tracking-wider font-extrabold text-black my-12 flex flex-col md:flex-row justify-between items-center md:items-end gap-6">
+        <div class="w-full md:w-1/2 pr-0 md:pr-4">
+            <hr class="border-t-2 border-gray-300 w-full mb-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center px-2 gap-2 text-center sm:text-left">            
+                <span>ARCHIVE_SECTION_END</span>            
+                <span>VIEWING_PAGE_01_OF_04</span>            
             </div>
         </div>
 
-        <div class="w-full font-sans text-[10px] tracking-wider font-extrabold text-black my-12 flex justify-between items-end">
-            <div class="w-1/2 pr-4">
-                <hr class="border-t-2 border-gray-300 w-full mb-4">
-                
-                <div class="flex justify-between items-center px-2">             
-                    <span>ARCHIVE_SECTION_END</span>             
-                    <span>VIEWING_PAGE_01_OF_04</span>             
-                </div>
-            </div>
+        <button class="border border-black py-4 px-10 text-[11px] font-black tracking-widest cursor-pointer w-full md:w-auto text-center">
+            LOAD_NEXT_ENTRIES
+        </button>        
+    </div>
 
-            <button class="border border-black py-4 px-10 text-[11px] font-black tracking-widest cursor-pointer">
-                LOAD_NEXT_ENTRIES
-            </button>         
-        </div>
+   <!-- FOOTER -->     
+     <div class="w-full bg-gray-200 border-t-[3px] border-black mt-auto px-4 sm:px-8 md:px-16 lg:px-24 xl:px-50">         
+         <footer class="w-full max-w-[1400px] mx-auto py-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-black font-mono text-[12px] font-bold tracking-wider text-center sm:text-left">             
+             <div class="text-gray-600">                 
+                 © 2026 ARCHITECTURAL_SYSTEMS. ALL RIGHTS RESERVED.             
+             </div>             
+             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 sm:space-x-8">                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">LINKEDIN</a>                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">GITHUB</a>                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">READCV</a>                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">TWITTER</a>             
+             </div>         
+         </footer> 
+    </div>
 
-     <!-- FOOTER -->
-    <div class="w-full bg-gray-200 border-t-[3px] border-black mt-auto">
-        <footer class="w-full max-w-[1400px] mx-auto px-8 py-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-black font-mono text-[12px] font-bold tracking-wider">
-            <div class="text-gray-600">
-                © 2024 ARCHITECTURAL_SYSTEMS. ALL RIGHTS RESERVED.
-            </div>
-            <div class="flex space-x-8">
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">LINKEDIN</a>
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">GITHUB</a>
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">READCV</a>
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">TWITTER</a>
-            </div>
-        </footer>
+</body>
+</html>

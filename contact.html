@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Assignment - contact</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cloudflare.com">
+     <style type="text/tailwindcss">
+    @theme {
+      --color-custom1: #3b82f6;
+      --color-custom2: #10b981;
+    }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-[#FCFCFC] text-black min-h-screen flex flex-col justify-between font-sans">
+<body class="bg-[#FCFCFC] text-black min-h-screen flex flex-col justify-between font-sans selection:bg-black selection:text-white bg-purple-200">
 
-    <!-- HEADER -->
-    <header class="w-full mx-auto px-8 py-6 flex justify-between items-center border-b-[3px] border-black">
-        <h1 class="font-black text-[13px] tracking-[0.15em]">STUDENT_PORTFOLIO_V1</h1>
-        <nav class="flex items-center space-x-10">
-            <a href="index.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em]">HOME</a>
-            <a href="projects.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em]">PROJECTS</a>
+    <header class="w-full max-w-[1400px] mx-auto px-4 sm:px-8 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 border-b-[3px] border-black">
+        <h1 class="font-black text-[12px] sm:text-[13px] tracking-[0.15em] text-center sm:text-left">RSC DESIGN</h1>
+        <nav class="flex flex-wrap items-center justify-center gap-4 sm:space-x-10">
+            <a href="index.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em] transition-colors">HOME</a>
+            <a href="projects.html" class="text-[10px] text-gray-400 font-bold hover:text-black tracking-[0.2em] transition-colors">PROJECTS</a>
             <div class="relative py-1">
                 <a href="contact.html" class="text-[10px] font-black text-black tracking-[0.2em]">CONTACT</a>
                 <div class="absolute bottom-0 left-0 w-full h-[2px] bg-black"></div>
             </div>
-            <a href="#" class="text-[10px] font-bold text-white bg-black px-6 py-2.5 tracking-[0.15em]">DOWNLOAD_CV</a>
+            <a href="#" class="text-[10px] font-bold text-white bg-black px-4 sm:px-6 py-2.5 tracking-[0.15em] hover:bg-neutral-800 transition-colors">DOWNLOAD_CV</a>
         </nav>
     </header>
 
-    <!-- Main Content Grid -->
-    <main class="w-full max-w-[1400px] mx-auto px-8 pt-16 pb-24 flex-grow">
-        <section class="grid grid-cols-12 gap-8 border-l-[3px] border-black pl-8 mb-16">
+    <main class="w-full max-w-[1400px] mx-auto px-4 sm:px-8 pt-10 sm:pt-16 pb-16 sm:pb-24 flex-grow">
+        <section class="grid grid-cols-12 gap-4 sm:gap-8 border-l-[3px] border-black pl-4 sm:pl-8 mb-12 sm:mb-16">
             <div class="col-span-12">
-                <p class="text-[10px] text-gray-400 tracking-widest mb-4 font-bold">03 // INQUIRY_NODE</p>
-                <h2 class="font-black text-7xl md:text-[85px] leading-[0.9] tracking-tighter text-black mb-6">
+                
+                <h2 class="font-black text-5xl sm:text-7xl md:text-[85px] leading-[0.95] sm:leading-[0.9] tracking-tighter text-black mb-6">
                     LEAVE YOUR<br><span class="text-gray-400 italic underline">MARK.</span>
                 </h2>
                 <p class="text-[11px] text-gray-500 uppercase tracking-wider max-w-2xl leading-relaxed font-bold">
@@ -38,32 +42,31 @@
             </div>
         </section>
 
-        <div class="w-full h-[1px] bg-gray-300 mb-16"></div>
+        <div class="w-full h-[1px] bg-gray-300 mb-12 sm:mb-16"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-            <!-- Left Hand side -->
-            <section class="md:col-span-7 bg-[#F4F4F4] p-10 border border-gray-200 min-h-200">
-                <form class="space-y-6" onsubmit="event.preventDefault();">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 sm:gap-16 items-start">
+            <section class="md:col-span-7 bg-[#F4F4F4] p-6 sm:p-10 border border-gray-200 min-h-auto md:min-h-[200px]">
+                <form class="space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="text-[10px] font-black text-black tracking-wider block mb-2">FULL NAME</label>
-                            <input type="text" placeholder="ALEX_VANCE" class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-15 mt-10 placeholder-gray-300 focus:outline-none focus:border-black">
+                            <input type="text" placeholder="JOE BLOGGS" class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-12 sm:h-15 placeholder-gray-300 focus:outline-none focus:border-black transition-colors">
                         </div>
                         <div>
                             <label class="text-[10px] font-black text-black tracking-wider block mb-2">EMAIL ADDRESS</label>
-                            <input type="email" placeholder="CLIENT@DOMAIN.COM" class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-15 mt-10 placeholder-gray-300 focus:outline-none focus:border-black">
+                            <input type="email" placeholder="CLIENT@DOMAIN.COM" class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-12 sm:h-15 placeholder-gray-300 focus:outline-none focus:border-black transition-colors">
                         </div>
                     </div>
                     <div>
                         <label class="text-[10px] font-black text-black tracking-wider block mb-2">SUBJECT</label>
-                        <input type="text" placeholder="PROJECT_COLLABORATION" class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-15 mt-10 placeholder-gray-300 focus:outline-none focus:border-black">
+                        <input type="text" placeholder="PROJECT_COLLABORATION" class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-12 sm:h-15 placeholder-gray-300 focus:outline-none focus:border-black transition-colors">
                     </div>
                     <div>
                         <label class="text-[10px] font-black text-black tracking-wider block mb-2">MESSAGE</label>
-                        <textarea placeholder="DESCRIBE THE SCOPE..." class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-50 mt-10 placeholder-gray-400 focus:outline-none focus:border-black resize-none" rows="6"></textarea>
+                        <textarea placeholder="ENTER YOUR MESSAGE..." class="w-full bg-[#FAFAFA] border border-gray-300 p-4 text-xs text-gray-700 h-40 sm:h-50 placeholder-gray-400 focus:outline-none focus:border-black resize-none transition-colors" rows="6"></textarea>
                     </div>
                     <div class="pt-2">
-                        <button type="submit" class="flex items-center justify-between bg-black text-white px-8 py-[18px] text-[11px] font-bold tracking-widest mt-10 w-64 cursor-pointer">
+                        <button type="submit" class="flex items-center justify-between bg-black text-white px-8 py-[18px] text-[11px] font-bold tracking-widest w-full sm:w-64 cursor-pointer hover:bg-custom2 transition-colors">
                             <span>INITIALIZE CONTACT</span>
                             <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
                         </button>
@@ -71,76 +74,74 @@
                 </form>
             </section>
 
-            <!-- Right Hand side -->
-            <section class="md:col-span-5 space-y-14 pl-2">
+            <section class="md:col-span-5 space-y-12 sm:space-y-14 md:pl-2">
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
                         <div class="w-8 h-[2px] bg-black"></div>
-                        <p class="text-[10px] font-black text-black tracking-[0.2em]">GEOGRAPHIC NODE</p>
                     </div>
                     <div>
-                        <h3 class="font-black text-2xl tracking-tight mb-2">METRO_STATION_404</h3>
+                        <h3 class="font-black text-xl sm:text-2xl tracking-tight mb-2">RSC DESIGN</h3>
                         <address class="text-[12px] text-gray-500 not-italic tracking-wide space-y-1 leading-relaxed font-bold">
-                            128 TECH PAVILION, LEVEL 02<br>ZURICH, SWITZERLAND CH-8001
+                            1 A STREET<br>A TOWN, A COUNTY, AB12 3CD, UNITED KINGDOM
                         </address>
                     </div>
-                    <div class="border border-gray-300 bg-[#EFEFEF] aspect-[16/10] relative flex items-center justify-center">
+                    <div class="border border-gray-300 bg-[#EFEFEF] aspect-[16/10] relative flex items-center justify-center overflow-hidden">
                         <div class="absolute inset-0 opacity-15 pointer-events-none">
                             <svg class="w-full h-full">
                                 <line x1="0" y1="0" x2="100%" y2="100%" stroke="black" stroke-width="1.5"/>
                                 <line x1="100%" y1="0" x2="0" y2="100%" stroke="black" stroke-width="1.5"/>
                             </svg>
                         </div>
-                        <span class="relative z-10 bg-[#EFEFEF] px-4 py-1.5 text-[9px] text-gray-400 font-bold tracking-widest border border-gray-300">MAP_COORDINATES_ZURICH</span>
+                        <span class="relative z-10 bg-[#EFEFEF] px-4 py-1.5 text-[8px] sm:text-[9px] text-gray-400 font-bold tracking-widest border border-gray-300 text-center">MAP_COORDINATES_MAIDSTONE</span>
                     </div>
                 </div>
 
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
                         <div class="w-8 h-[2px] bg-black"></div>
-                        <p class="text-[10px] font-black text-black tracking-[0.2em]">DIRECT REACH</p>
+                        <p class="text-[10px] font-black text-black tracking-[0.2em]">CONTACT</p>
                     </div>
-                    <div class="space-y-4 font-bold">                         
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-3">                             
-                            <a href="mailto:hello@studioarchive.io" class="text-xl text-black hover:text-gray-500 transition-colors">HELLO@STUDIOARCHIVE.IO</a>                             
-                            <i class="fa-solid fa-arrow-up-right text-normal text-gray-400"></i>                         
-                        </div>                         
-                        <div class="flex justify-between items-center border-b border-gray-200 pb-3">                             
-                            <a href="tel:+41000000000" class="text-xl text-black hover:text-gray-500 transition-colors">+41 000 000 000</a>                             
-                            <i class="fa-solid fa-arrow-up-right text-xs text-gray-400"></i>                         
-                        </div>                     
+                    <div class="space-y-4 font-bold">                        
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-3 gap-2">                            
+                            <a href="mailto:hello@studioarchive.io" class="text-base sm:text-xl text-black hover:text-gray-500 transition-colors break-all sm:break-normal">HELLO@RSCDESIGN.CO.UK</a>                            
+                            <i class="fa-solid fa-arrow-up-right text-xs text-gray-400 shrink-0"></i>                        
+                        </div>                        
+                        <div class="flex justify-between items-center border-b border-gray-200 pb-3 gap-2">                            
+                            <a href="tel:+41000000000" class="text-base sm:text-xl text-black hover:text-gray-500 transition-colors">+441234 567890</a>                            
+                            <i class="fa-solid fa-arrow-up-right text-xs text-gray-400 shrink-0"></i>                        
+                        </div>                    
                     </div>
                 </div>
 
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
                         <div class="w-8 h-[2px] bg-black"></div>
-                        <p class="text-[10px] font-black text-black tracking-[0.2em]">DIGITAL PRESENCE</p>
+                        <p class="text-[10px] font-black text-black tracking-[0.2em]">SOCIAL MEDIA & LINKS</p>
                     </div>
                     <div class="flex flex-wrap gap-3">
-                        <a href="#" class="text-[10px] text-black font-black border border-black px-5 py-2.5 hover:bg-black hover:text-white transition-colors duration-200 w-30">INSTAGRAM</a>
-                        <a href="#" class="text-[10px] text-black font-black border border-black px-5 py-2.5 hover:bg-black hover:text-white transition-colors duration-200 w-30">LINKEDIN</a>
-                        <a href="#" class="text-[10px] text-black font-black border border-black px-5 py-2.5 hover:bg-black hover:text-white transition-colors duration-200 w-30">GITHUB</a>
+                        <a href="#" class="text-[10px] text-black font-black border border-black px-5 py-2.5 hover:bg-custom1 hover:text-white transition-colors duration-200 flex-1 sm:flex-initial text-center min-w-[90px]">INSTAGRAM</a>
+                        <a href="#" class="text-[10px] text-black font-black border border-black px-5 py-2.5 hover:bg-custom1 hover:text-white transition-colors duration-200 flex-1 sm:flex-initial text-center min-w-[90px]">LINKEDIN</a>
+                        <a href="#" class="text-[10px] text-black font-black border border-black px-5 py-2.5 hover:bg-custom1 hover:text-white transition-colors duration-200 flex-1 sm:flex-initial text-center min-w-[90px]">GITHUB</a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
 
-
-
-    <!-- FOOTER -->
-    <div class="w-full bg-gray-200 border-t-[3px] border-black mt-auto">
-        <footer class="w-full max-w-[1400px] mx-auto px-8 py-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-black font-mono text-[12px] font-bold tracking-wider">
-            <div class="text-gray-600">
-                © 2024 ARCHITECTURAL_SYSTEMS. ALL RIGHTS RESERVED.
-            </div>
-            <div class="flex space-x-8">
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">LINKEDIN</a>
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">GITHUB</a>
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">READCV</a>
-                <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">TWITTER</a>
-            </div>
-        </footer>
+    <!-- FOOTER -->     
+     <div class="w-full bg-gray-200 border-t-[3px] border-black mt-auto px-4 sm:px-8 md:px-16 lg:px-24 xl:px-50">         
+         <footer class="w-full max-w-[1400px] mx-auto py-10 flex flex-col sm:flex-row justify-between items-center gap-4 text-black font-mono text-[12px] font-bold tracking-wider text-center sm:text-left">             
+             <div class="text-gray-600">                 
+                 © 2026 ARCHITECTURAL_SYSTEMS. ALL RIGHTS RESERVED.             
+             </div>             
+             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 sm:space-x-8">                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">LINKEDIN</a>                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">GITHUB</a>                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">READCV</a>                 
+                 <a href="#" class="text-black hover:text-gray-600 underline underline-offset-4">TWITTER</a>             
+             </div>         
+         </footer> 
+    </div>
 
 </body>
+</html>
